@@ -1,0 +1,96 @@
+#!/usr/bin/python3
+#coding=utf-8
+from Crypto.Cipher import AES
+from Crypto.Util.Padding import pad
+from Crypto.Util.Padding import unpad
+import base64
+import sys
+
+bs = 16
+enc_data = None
+dec_data = None
+
+
+class AES_UTIL:
+    @staticmethod
+    def encrypt(data, key, iv):
+        cipher = AES.new(key, AES.MODE_CBC, iv)
+        data = pad(data, bs)
+        enc_bytes = cipher.encrypt(data)
+        enc_data = base64.b64encode(enc_bytes)
+        return enc_data
+
+    @staticmethod
+    def decrypt(data, key, iv):
+        cipher = AES.new(key, AES.MODE_CBC, iv)
+        enc_bytes = base64.decodebytes(data)
+        dec_data = unpad(cipher.decrypt(enc_bytes), bs).decode('utf-8')
+        return dec_data
+
+    @staticmethod
+    def operate(commands):
+
+        # arguments judged
+        if len(commands) == 4 and (commands[1] == '-d' or commands[1] == '-e'):
+            command = commands[1]
+            input_file = commands[2]
+            output_file = commands[3]
+        else:
+            print('Syntax:')
+            print('To encrypt:  ./duke-crypter -e <input_file> <output_file>')
+            print('To decrypt:  ./duke-crypter -d <input_file> <output_file>')
+            exit(1)
+
+        data = str()
+        try:
+            # support large file
+            with open(input_file, 'r') as f:
+                for line in f:
+                    data = data + line
+        except IOError:
+            print('Err: can\'t not find ', input_file)
+            exit(1)
+        try:
+            fo = open(output_file, 'w')
+        except IOError:
+            print('Err: can\'t not find ', output_file)
+            exit(1)
+
+        input_str = input('please input your key:\n')
+        key = iv = input_str.encode('utf-8')
+
+        # enc data with key
+        if command == '-e':
+            global enc_data
+            data = (data + input_str).encode('utf-8')
+            enc_data = AES_UTIL.encrypt(data, key, iv)
+        # dec data delete key
+        elif command == '-d':
+            global dec_data
+            try:
+                data = data.encode('utf-8')
+                dec_data = AES_UTIL.decrypt(data, key, iv)
+            except Exception:
+                print('Err: wrong key or file has been changed!')
+                exit(1)
+
+        # write cover space file
+        try:
+            if command == '-e':
+                fo.write(enc_data.decode('utf-8'))
+            elif command == '-d':
+                # recover into true file
+                dec_data = dec_data.rstrip(key.decode('utf-8'))
+                fo.write(dec_data)
+        except IOError:
+            print('Exp: io exception!')
+            exit(1)
+        else:
+            print('operate success!')
+
+
+if __name__ == '__main__':
+
+    commands = sys.argv
+    AES_UTIL.operate(commands)
+    exit(0)

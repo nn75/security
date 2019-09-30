@@ -1,0 +1,40 @@
+Domain : VCM-10861
+SysKey : d1805e2d66acbfeedefecec429be0aa7
+Local SID : S-1-5-21-664009418-3859793135-1404398057
+
+SAMKey : 87206e4ca726fa2f5d8e5161c1b64582
+
+RID  : 000001f4 (500)
+User : Administrator
+  Hash NTLM: b91ce1a3ad43a49a65fce3ce9181231e
+
+RID  : 000001f5 (501)
+User : Guest
+
+RID  : 000001f7 (503)
+User : DefaultAccount
+
+RID  : 000001f8 (504)
+User : WDAGUtilityAccount
+  Hash NTLM: fd65a5d4e516589978e564219f3c9cac
+
+RID  : 000003ea (1002)
+User : rapid
+  Hash NTLM: 6b6c8ff44e63542c7529fba1a012e0ca
+
+RID  : 000003eb (1003)
+User : vcm
+  Hash NTLM: 62f6ad85ac5205f0032a96fc356c7824
+
+RID  : 000003ed (1005)
+User : test1
+  Hash NTLM: c51602d46e08e6fe02b5dc5c6439e538
+
+RID  : 000003ee (1006)
+User : test2
+  Hash NTLM: b1b068efcefc2e4c5e5e57030c455291
+
+RID  : 000003ef (1007)
+User : test3
+  Hash NTLM: f330510158b50a345d149bf5a05d74f3
+  

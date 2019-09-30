@@ -1,0 +1,111 @@
+Ward Cunningham and co-author Bo Leuf, in their book The 
+Wiki Way: Quick Collaboration on the Web, described the essence of the Wiki concept as follows:[8]
+
+
+A wiki invites all users—not just expe
+rts—to edit any page or to create new pages within the wi
+ki Web site, using only a standard "plain-vanilla" Web browser without any extra add-ons.
+Wi
+ki promotes meaningful topic associati
+ons between different pages by making page link creation
+ intuitively easy and showing whether an intended target page exists or not.
+A 
+wiki is not a carefully crafted site 
+created by experts and professional writer
+s, and designed for casual visitors. Instead, it se
+eks to involve the typical visitor/user in an ongoing 
+process of creation and collaboration that constantly changes the website landscape.
+A wiki
+ enables communities of editors and c
+ ontributors to write documents collab
+ oratively. All that people require to contribute 
+ is a computer, Internet access, a web browser, and a basi
+ c understanding of a simple markup language (e.g., HTML). A si
+ ngle page in a wiki website is referred to as a "wiki page", while 
+ the entire collection of pages, which are usually 
+ well-interconnected by 
+ hyperlinks, is "the wiki". A wiki is essentially a database for creating, bro
+ omplex, and networked text, while also allowing for ed
+ itor argument, debate, and interaction
+  regarding the content and formatting.[9] A defining char
+  acteristic of wiki technolog
+  y is the ease with which pages can be created and update
+  d. Generally, there is no review by
+   a moderator or gatekeeper before modifications are accep
+   ted and thus lead to changes on the website. Many wi
+   kis are open to alteration by the general public w
+   ithout requiring registration of user accounts. Many edit
+   s can be made in real-time and appear almost instantly onli
+   
+   ne, but this feature facilitates abuse of the system. Private w
+   iki servers require user authentication to edit pages, an
+   d sometimes even to read them. Mag
+   ed N. Kamel Boulos, Cit
+   o Maramba, and Steve Wheeler write that the open wikis pro
+   duce a process of Social Darwinism. "'Unfit' sentences and
+   ey are not considered 'fit', which hopefully results in the
+    evolution of a higher quality and more relevant page. While
+
+     such openness may invite 'vandalism' and the posting of un
+     true information, this same openness also makes it possibl
+     e to rapidly correct or restore a 'quality' wiki page."[10]
+
+
+Editing
+For 
+the project page on editing Wikitext on Wikipedia, see Help:Wikitext.
+W
+ikitext
+Cheatsheet
+All Wikitext
+Magic links
+Visual files
+Sound files
+Tables
+Using templates
+Using HTML codes within Wikitext
+vte
+Some wikis have an Edit button o
+r link directly on the pag
+e being
+ viewed, if the user has permission t
+ o edit the page. This can lead 
+ to a te
+ xt-based editing page where part
+ icipants 
+ can structure and format wiki page
+ s with a sim
+ plified markup language, sometimes 
+ known as Wikitext, 
+ Wiki markup or Wikicode (it can also l
+ ead to a WYSIWYG e
+ diting page; see the paragraph after the
+  table below). For
+  example, starting lines of text with asterisk
+  s could create
+  te a bulleted list. The style and syntax 
+  of wikitexts can vary great
+  l
+  y among wiki implementatio
+  ns,[example needed] some of which al
+  so allow HTML tags.
+
+Wikis have favoured pla
+in-text edi
+ting, with fewer and simpler conventi
+ons than HTML, for indica
+ting style and 
+structure. Although limiti
+ng access to 
+HTML and Cascading Style Sheet
+s (CSS) of wikis limits
+ use
+r ability to alter the structur
+e and formatting of wik
+i content, there are some benefits.
+ Limited access to CSS promotes consistency in t
+he look and feel, and having J
+avaScript d
+
+isabled prevents a user
+ from implementing code that may limit other users' access.
