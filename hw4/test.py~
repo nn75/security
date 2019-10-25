@@ -1,0 +1,7 @@
+from PIL import Image
+
+im = Image.open('homework4.png')
+
+pix_val=list(im.getdata())
+
+print pix_val
