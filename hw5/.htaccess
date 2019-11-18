@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Use the password from the assignment to access this (this authentication is not part of the problem; do not attack it)"
+AuthUserFile /var/www/html/.htpasswd
+Require valid-user
